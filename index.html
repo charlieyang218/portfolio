@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh-CN"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Jade Joplin | Portfolio&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root { --bg: #fff; --text: #000; --gray: #e3e3e3; --trans: all 0.8s cubic-bezier(0.25, 1, 0.5, 1); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* { margin: 0; padding: 0; box-sizing: border-box; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.reveal { opacity: 0; transform: translateY(30px); transition: var(--trans); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.reveal.active { opacity: 1; transform: translateY(0); }</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header { position: fixed; top: 0; width: 100%; height: 90px; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; background: rgba(255,255,255,0.9); z-index: 1000; transition: 0.3s; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header.scrolled { height: 70px; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.logo { font-size: 22px; font-weight: 800; letter-spacing: 2px; text-decoration: none; color: #000; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a { text-decoration: none; color: #000; font-size: 13px; margin-left: 30px; letter-spacing: 1px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero h1 { font-size: clamp(50px, 10vw, 120px); font-weight: 400; letter-spacing: -2px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero p { font-size: 18px; letter-spacing: 6px; text-transform: uppercase; color: #666; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.work-grid { max-width: 1300px; margin: 0 auto; padding: 0 50px 100px; display: grid; grid-template-columns: repeat(12, 1fr); gap: 80px 40px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.work-link { text-decoration: none; color: inherit; display: block; grid-column: span 12; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.work-item { cursor: pointer; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.img-wrap { width: 100%; height: 100%; overflow: hidden; background: var(--gray); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.img-box { width: 100%; height: 100%; transition: 1.2s cubic-bezier(0.16, 1, 0.3, 1); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.work-link:hover .img-box { transform: scale(1.05); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.work-item p { margin-top: 15px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.item-1 { grid-column: 1 / 10; height: 600px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.item-2 { grid-column: 2 / 7; height: 450px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.item-3 { grid-column: 8 / 13; height: 350px; margin-top: -100px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer { padding: 100px 50px; text-align: center; border-top: 1px solid #eee; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) { .work-grid { display: block; } .item-1, .item-2, .item-3 { height: 350px; margin: 40px 0; } }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header id="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="index.html" class="logo"&gt;JADE JOPLIN&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav&gt;&lt;a href="#work"&gt;WORK&lt;/a&gt;&lt;a href="#about"&gt;ABOUT&lt;/a&gt;&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="hero reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;JADE JOPLIN&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Graphic Designer&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="work-grid" id="work"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 项目 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="project-detail.html" class="work-link item-1 reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="work-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="img-wrap"&gt;&lt;div class="img-box" style="background:#ddd"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;01 / Editorial Project&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 项目 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="project-detail.html" class="work-link item-2 reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="work-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="img-wrap"&gt;&lt;div class="img-box" style="background:#ccc"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;02 / Brand Identity&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 项目 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="project-detail.html" class="work-link item-3 reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="work-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="img-wrap"&gt;&lt;div class="img-box" style="background:#bbb"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;03 / Digital Art&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const obs = new IntersectionObserver(es =&gt; es.forEach(e =&gt; e.isIntersecting &amp;&amp; e.target.classList.add('active')), {threshold:0.1});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('.reveal').forEach(el =&gt; obs.observe(el));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.onscroll = () =&gt; document.getElementById('header').classList.toggle('scrolled', window.scrollY &gt; 50);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
